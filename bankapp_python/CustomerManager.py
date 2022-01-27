@@ -64,7 +64,7 @@ class CustomerManager(DataSource):
         customers = self.get_all()
         customers.append(new_customer)
         self._write_to_file(customers)
-        return customers[new_customer]
+        return new_customer
     
     def update_customer(self, updated_customer: Customer):
         """Updates a customer in the list and writes over the file with the updated list

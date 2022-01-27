@@ -146,10 +146,9 @@ class UI:
         could_be_removed = result[0]
         if could_be_removed:
             for index, element in enumerate(result):
-                if not index == 0:
-                    print(element)
+                print(element)
         else:
-            print('Customer could not be added')
+            print('Customer could not be removed')
         
     def _change_name_of_customer(self):
         print('\n    --Change Name of Customer--\n', flush = True)
